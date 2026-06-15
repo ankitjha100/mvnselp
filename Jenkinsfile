@@ -18,7 +18,7 @@ sh 'mvn test'
 }}
 stage('Run'){
 steps{
-sh 'mvn exex:java'
+sh 'mvn exec:java'
 }}}
 post{
 success{
