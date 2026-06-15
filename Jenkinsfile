@@ -18,7 +18,7 @@ sh 'mvn test'
 }}
 stage('Run'){
 steps{
-sh 'mvn clean install'
+sh 'mvn exec:java -Dexec.mainClass="com.example.App" '
 }}}
 post{
 success{
